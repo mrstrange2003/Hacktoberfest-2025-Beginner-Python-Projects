@@ -33,7 +33,7 @@ source/yourgithubusername-projectname/
 ## ✅ Example Project
 Example folder structure:
 ```bash
-src/jdipayanrao-alarm-clock/
+src/githubusername-alarm-clock/
 │
 ├── alarm.py
 ├── README.md
