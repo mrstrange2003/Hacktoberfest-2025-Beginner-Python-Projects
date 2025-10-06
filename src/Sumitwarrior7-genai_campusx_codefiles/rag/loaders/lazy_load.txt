@@ -1,0 +1,20 @@
+Load vs Lazy Load
+
+✅ load()
+Eager Loading (loads everything at once).
+Returns: A list of Document objects.
+Loads all documents immediately into memory.
+
+Best when:
+The number of documents is small.
+You want everything loaded upfront.
+
+
+🌀 lazy_load()
+Lazy Loading (loads on demand).
+Returns: A generator of Document objects.
+Documents are not all loaded at once; they're fetched one at a time as needed.
+
+Best when:
+You're dealing with large documents or lots of files.
+You want to stream processing (e.g., chunking, embedding) without using lots of memory.
