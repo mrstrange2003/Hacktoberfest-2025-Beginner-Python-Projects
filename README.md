@@ -10,7 +10,7 @@ This repository is made for beginners who want to participate in **Hacktoberfest
 1. **Fork** this repository.
 2. Create a new folder inside `src/` named as:
 ```bash
-src/yourgithubusername-projectname/
+source/yourgithubusername-projectname/
 ```
 3. Add:
 - Your Python file(s)
@@ -24,7 +24,7 @@ src/yourgithubusername-projectname/
 ## 🧩 Rules
 - Must be your **original work** (no plagiarism).
 - Keep it **beginner-friendly**.
-- Follow proper folder naming (`src/username-projectname`).
+- Follow proper folder naming (`source/username-projectname`).
 - 1 Project per PR.
 - Mention the issue number if applicable.
 
