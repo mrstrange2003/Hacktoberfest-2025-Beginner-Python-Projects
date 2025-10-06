@@ -24,7 +24,7 @@ src/yourgithubusername-projectname/
 ## 🧩 Rules
 - Must be your **original work** (no plagiarism).
 - Keep it **beginner-friendly**.
-- Follow proper folder naming (`src/username-projectname`).
+- Follow proper folder naming (`source/username-projectname`).
 - 1 Project per PR.
 - Mention the issue number if applicable.
 
@@ -33,7 +33,7 @@ src/yourgithubusername-projectname/
 ## ✅ Example Project
 Example folder structure:
 ```bash
-src/username-alarm-clock/
+source/githubusername-alarm-clock/
 │
 ├── alarm.py
 ├── README.md
