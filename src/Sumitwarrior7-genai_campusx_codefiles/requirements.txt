@@ -1,0 +1,29 @@
+# LangChain Core
+langchain
+langchain-core
+langchain-community
+langchain-experimental
+
+langchain-groq
+langchain-mistralai
+
+# Hugging Face Integration
+langchain-huggingface
+transformers
+huggingface-hub
+
+# Environment Variable Management
+python-dotenv
+
+# Machine Learning Utilities
+# numpy
+# scikit-learn
+# streamlit
+
+# Additional
+pypdf
+chromadb
+faiss-cpu
+wikipedia 
+tiktoken
+duckduckgo-search

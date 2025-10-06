@@ -1,0 +1,38 @@
+1. UI Based Enhancements
+
+2. Evaluation
+   a. Ragas
+   b. LangSmith
+
+3. Indexing
+   a. Document Ingestion
+   b. Text Splitting
+   c. Vector Store - Pinecone
+
+4. Retrieval
+   a. Pre-Retrieval
+      i.   Query rewriting using LLM
+      ii.  Multi-query generation
+      iii. Domain aware routing
+
+   b. During Retrieval
+      i.   MMR (Maximal Marginal Relevance)
+      ii.  Hybrid Retrieval
+      iii. Reranking
+
+   c. Post-Retrieval
+      i. Contextual Compression
+
+5. Augmentation
+   a. Prompt Templating
+   b. Answer Grounding
+   c. Context Window Optimization
+
+6. Generation
+   a. Answer with Citation
+   b. Guard Railing
+
+7. System Design
+   a. Multimodal
+   b. Agentic
+   c. Memory Based
