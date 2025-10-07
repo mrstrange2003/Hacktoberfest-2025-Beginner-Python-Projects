@@ -13,11 +13,11 @@ Here are some examples of memes created using this generator:
 
 ### Input Image
 
-![Input Image](examples/input.jpg)
+![Input Image](example/template.jpg)
 
 ### Generated Meme
 
-![Generated Meme](examples/output.png)
+![Generated Meme](example/meme1.png)
 
 The meme generator adds white text with black outline for better visibility on any background. Text is automatically sized and centered based on the image dimensions.
 
