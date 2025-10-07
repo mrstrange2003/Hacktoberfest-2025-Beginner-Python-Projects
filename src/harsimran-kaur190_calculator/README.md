@@ -33,17 +33,7 @@ A command-line Python calculator that supports multiple arithmetic and mathemati
 python calculator.py
 ```
 
-2. You will see a menu of operations:
-1. Add
-2. Subtract
-3. Multiply
-4. Divide
-5. Square root
-6. Power
-7. Factorial
-8. Average
-9. Percentage
-10. Exit
+2. You will see a menu of operations
 
 3. Enter the name of the operation (e.g., add, subtract).
 Inputs are case-insensitive and ignore spaces.
