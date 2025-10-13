@@ -2,42 +2,68 @@ import re
 
 def check_password_strength(password):
     strength = 0
-    remarks = ""
+    feedback = []
 
-    # Length check
-    if len(password) >= 8:
+    # --- Length-based scoring ---
+    if len(password) >= 12:
+        strength += 2
+    elif len(password) >= 8:
         strength += 1
-
-    # Contains lowercase letters
-    if re.search("[a-z]", password):
-        strength += 1
-
-    # Contains uppercase letters
-    if re.search("[A-Z]", password):
-        strength += 1
-
-    # Contains digits
-    if re.search("[0-9]", password):
-        strength += 1
-
-    # Contains special characters
-    if re.search("[@#$%^&+=!]", password):
-        strength += 1
-
-    # Remarks based on strength score
-    if strength == 5:
-        remarks = "💪 Strong password!"
-    elif 3 <= strength < 5:
-        remarks = "🙂 Moderate password. You can make it stronger."
     else:
-        remarks = "⚠️ Weak password. Try adding more variety."
+        feedback.append("Password is too short (min 8 characters).")
 
-    print(f"\nPassword Strength: {strength}/5")
-    print(remarks)
+    # --- Character type checks ---
+    if re.search(r"[a-z]", password):
+        strength += 1
+    else:
+        feedback.append("Add lowercase letters (a-z).")
 
-# Main Function
+    if re.search(r"[A-Z]", password):
+        strength += 1
+    else:
+        feedback.append("Add uppercase letters (A-Z).")
+
+    if re.search(r"\d", password):
+        strength += 1
+    else:
+        feedback.append("Add numbers (0-9).")
+
+    if re.search(r"[@#$%^&*()_+=!?.]", password):
+        strength += 1
+    else:
+        feedback.append("Add special characters (@, #, $, etc.).")
+
+    # --- Detect repetitive characters ---
+    if re.search(r"(.)\1{2,}", password):
+        feedback.append("Avoid using the same character repeatedly.")
+
+    # --- Detect sequential patterns ---
+    if re.search(r"(123|234|345|456|567|678|789|abc|abcd|qwerty|password)", password.lower()):
+        feedback.append("Avoid common or sequential patterns (like 12345, abc, qwerty).")
+        strength -= 1  # Penalize common patterns
+
+    # --- Score-based remarks ---
+    if strength >= 6:
+        remarks = "💪 Very strong password!"
+    elif 4 <= strength < 6:
+        remarks = "🙂 Good password, but can be stronger."
+    elif 2 <= strength < 4:
+        remarks = "😐 Weak password. Try mixing more characters."
+    else:
+        remarks = "⚠️ Very weak password!"
+
+    # --- Display results ---
+    print(f"\nPassword Strength Score: {max(strength, 0)}/6")
+    print("Remarks:", remarks)
+
+    if feedback:
+        print("\nSuggestions for improvement:")
+        for f in feedback:
+            print("-", f)
+
+# --- Main Program ---
 def main():
-    print("🔒 Welcome to the Password Strength Checker!\n")
+    print("🔒 Welcome to the Advanced Password Strength Checker!\n")
     password = input("Enter your password: ")
     check_password_strength(password)
 
