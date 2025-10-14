@@ -55,5 +55,5 @@ src/githubusername-alarm-clock/
 ---
 
 ### 💬 Questions?
-Open an issue or tag me — I’ll help you get started!
+Open an issue or tag me — I’ll help you get started! Also, please follow me and star this repository. It means a lot to me.
 
