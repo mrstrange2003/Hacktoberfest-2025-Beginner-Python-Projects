@@ -1,0 +1,7 @@
+# This project has no external runtime dependencies.
+# You can install optional dev tools by uncommenting below:
+# pytest==8.3.3
+# black==24.8.0
+# ruff==0.6.9
+
+
