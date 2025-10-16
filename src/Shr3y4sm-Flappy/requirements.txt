@@ -1,0 +1,7 @@
+# Requirements for the Flappy-style GUI game
+# The game uses only the Python standard library (tkinter, random, time).
+# No external packages are required to run `gui_game.py`.
+
+# If you plan to run other utilities in this folder (see `run.py`), they may
+# require additional packages (example: solders, bip_utils) which are NOT
+# required for the Flappy game itself.
