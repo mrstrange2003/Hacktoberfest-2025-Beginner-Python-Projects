@@ -1,4 +1,4 @@
-# 🎃 Hacktoberfest 2025 - Beginner Python Projects
+# 🎃 Hacktoberfest 2025 - Beginner Python Projects 
 
 Welcome, open-source contributors! 🚀  
 This repository is made for beginners who want to participate in **Hacktoberfest 2025** by contributing small Python projects.
