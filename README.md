@@ -50,7 +50,7 @@ src/githubusername-alarm-clock/
 - Weather App 🌤️  
 - File Organizer 📁
 
-## Hacktoberfest 2026 coming soon
+## Hacktoberfest 2026 coming soon!
 
 
 ---
